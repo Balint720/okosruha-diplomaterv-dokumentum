@@ -4,12 +4,12 @@
 \input{include/packages}
 
 %TODO Set the main variables
-\newcommand{\vikszerzoVezeteknev}{Gipsz}
-\newcommand{\vikszerzoKeresztnev}{Jakab}
+\newcommand{\vikszerzoVezeteknev}{Tóth}
+\newcommand{\vikszerzoKeresztnev}{Bálint}
 
 \newcommand{\vikkonzulensAMegszolitas}{dr.~}
-\newcommand{\vikkonzulensAVezeteknev}{Konzulens}
-\newcommand{\vikkonzulensAKeresztnev}{Egy}
+\newcommand{\vikkonzulensAVezeteknev}{Kozlovszky}
+\newcommand{\vikkonzulensAKeresztnev}{Miklós}
 
 \newcommand{\vikkonzulensBMegszolitas}{}
 \newcommand{\vikkonzulensBVezeteknev}{Konzulens}
@@ -19,20 +19,19 @@
 \newcommand{\vikkonzulensCVezeteknev}{}
 \newcommand{\vikkonzulensCKeresztnev}{}
 
-\newcommand{\vikcim}{Elektronikus terelők} % Cím
+\newcommand{\vikcim}{Okosruha tervezése} % Cím
 \newcommand{\viktanszek}{\bmemit} % Tanszék
-\newcommand{\vikdoktipus}{\bsc} % Dokumentum típusa (\bsc vagy \msc)
-\newcommand{\vikmunkatipusat}{szakdolgozatot} % a "hallgató nyilatkozat" részhez: szakdolgozatot vagy diplomatervet
+\newcommand{\vikdoktipus}{\msc} % Dokumentum típusa (\bsc vagy \msc)
+\newcommand{\vikmunkatipusat}{diplomatervet} % a "hallgató nyilatkozat" részhez: szakdolgozatot vagy diplomatervet
 
 \input{include/tdk-variables}
 \newcommand{\szerzoMeta}{\vikszerzoVezeteknev{} \vikszerzoKeresztnev} % egy szerző esetén
 %\newcommand{\szerzoMeta}{\vikszerzoVezeteknev{} \vikszerzoKeresztnev, \tdkszerzoB} % két szerző esetén
 
-%TODO Language configuration -- choose one
 % Beállítások magyar nyelvű dolgozathoz
-\input{include/thesis-hu}
+%\input{include/thesis-hu}
 % Settings for English documents
-%\input{include/thesis-en}
+\input{include/thesis-en}
 
 \input{include/preamble}
 
@@ -50,7 +49,6 @@
 
 \selectthesislanguage
 
-%TODO Titlepage -- choose one from below
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 \include{include/titlepage}		   % Szakdolgozat/Diplomaterv címlap
 %\include{include/titlepage-tdk}	% TDK címlap
@@ -64,8 +62,8 @@
 
 % Declaration and Abstract
 %~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-\include{include/\declaration} %TODO Hallgatói nyilatkozat -- TDK és OTDK esetén törlendő!
-\include{content/abstract}    %TODO Összefoglaló -- TDK és OTDK esetén nem kötelező
+\include{include/\declaration}
+\include{content/abstract}
 
 
 % The main part of the thesis
@@ -101,7 +99,7 @@
 \include{content/appendices}
 
 
-\input{include/\AIdeclaration}
+%\input{include/\AIdeclaration}
 
 %\label{page:last}
 \end{document}
